@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/site/horserace/scripts/learn/Horserace/Factors'
-let g:netrw_dirhist_2='/site/commit-graphs/bin'
-let g:netrw_dirhist_3='/site/horserace/scripts/simple_ensemble/Model'
-let g:netrw_dirhist_4='/site/horserace/scripts/lib/Horserace'
-let g:netrw_dirhist_5='/site/horserace/scripts/simple_ensemble/Model'
-let g:netrw_dirhist_6='/site/aptxs'
-let g:netrw_dirhist_7='/site/aptxs/lib/Algorithm/LinearFit/Random'
