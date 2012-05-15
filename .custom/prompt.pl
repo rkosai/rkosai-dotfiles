@@ -27,7 +27,7 @@ my $branch_color = $changes ? RED : GREEN;
 
 if ( $short ) {
     if ($branch) {
-        $branch =~ s/^(\w)\w+(\w)$/$1$2/;
+        $branch =~ s/^(.).+(.)$/$1$2/;
         $branch = join('', $branch_color, "$branch", CLEAR, '|');
     }
 
