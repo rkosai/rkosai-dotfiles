@@ -58,6 +58,6 @@ sub parse_git {
 
         # Get branch name
         $str =~ /^\# On branch (\S+)/igs;
-        return ($1, $changes);
+        return ($1 || '', $changes);
     }
 }
