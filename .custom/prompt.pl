@@ -55,6 +55,7 @@ sub parse_git {
         my $changes = 0;
         if ($str =~ /Changes not staged for commit:/) { $changes = 1};
         if ($str =~ /Untracked files:/) { $changes = 1};
+        if ($str =~ /Changed but not updated:/) { $changes = 1};
 
         # Get branch name
         $str =~ /^\# On branch (\S+)/igs;
