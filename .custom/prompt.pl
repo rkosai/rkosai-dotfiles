@@ -8,6 +8,11 @@ use warnings;
 use Term::ANSIColor qw/:constants/;
 use Getopt::Long;
 
+use constant LB => 'LEFT_BRACKET';
+use constant RB => 'RIGHT_BRACKET';
+
+##################################################
+
 my ($short, $user, $host, $time, $dir);
 GetOptions(
     'short'  => \$short,
@@ -22,13 +27,15 @@ $dir =~ s!^/home/$user\b!~!;
 
 # Get current branch
 my ($branch, $changes) = parse_git();
-my $branch_color = $changes ? RED : GREEN;
+my $branch_color = LB . ($changes ? RED : GREEN) . RB;
+my $clear = LB . CLEAR . RB;
+
 ##################################################
 
 if ( $short ) {
     if ($branch) {
         $branch =~ s/^(.).+(.)$/$1$2/;
-        $branch = join('', $branch_color, "$branch", CLEAR, '|');
+        $branch = join('', $branch_color, "$branch", $clear, '|');
     }
 
     $user =~ s/^(\w{2})\w+$/$1/;
@@ -38,7 +45,7 @@ if ( $short ) {
 }
 else {
     if ($branch) {
-        $branch = join('', $branch_color, "{$branch} ", CLEAR)
+        $branch = join('', $branch_color, "{$branch} ", $clear)
     }
     print "$time $branch$user\@$host:$dir\$ ";
 }
