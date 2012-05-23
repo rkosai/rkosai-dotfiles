@@ -1,23 +1,14 @@
+term xterm
 
-################
-#
-# 256 colours
-#
-# ... http://frexx.de/xterm-256-notes/
-#
+# 256 colors
 
-# terminfo and termcap for nice 256 color terminal
-# allow bold colors - necessary for some reason
+# http://frexx.de/xterm-256-notes/
 attrcolor b ".I"
-
-# tell screen how to set colors. AB = background, AF=foreground
 termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
-
 # erase background with current bg color
 defbce "on"
 
-#term "screen-256color"
-#term "screen-88color-bce"
-#term "screen-256color-bce"
-#term xterm
+# main options
+hardstatus alwayslastline
+hardstatus string '%{= kW}%-Lw%{= kY}%50> %n*%f %t%{= kW}%+Lw%< %{= kW}%-=%D %m/%d/%y %C %A %1`%{-}'
 
