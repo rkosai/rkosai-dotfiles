@@ -5,7 +5,8 @@ set expandtab
 syntax on
 
 set t_Co=256
-colorscheme donbass
+let g:lucius_style="light"
+colorscheme lucius
 
 set splitright
 
