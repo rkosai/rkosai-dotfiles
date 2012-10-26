@@ -10,9 +10,12 @@ colorscheme lucius
 
 set splitright
 
+" Enable filetype plugins
+:filetype plugin on
+
 " Highlight bad form
-:highlight BadForm ctermbg=darkred guibg=darkred
-:match BadForm /\s\+$\|\t/
+autocmd BufNewFile,BufRead * :highlight BadForm ctermbg=darkred guibg=darkred
+autocmd BufNewFile,BufRead * :match BadForm /\s\+$\|\t/
 
 " Load NERDTree
 autocmd VimEnter * NERDTree
