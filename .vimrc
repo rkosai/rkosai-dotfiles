@@ -10,8 +10,12 @@ colorscheme lucius
 
 set splitright
 
-" Enable filetype plugins
-:filetype plugin on
+" Enable filetype plugins for python
+autocmd BufNewFile,BufRead *.py :filetype plugin on
+
+" Highlight 81st column
+:set textwidth=80
+:set colorcolumn=+1,+2,+3
 
 " Highlight bad form
 autocmd BufNewFile,BufRead * :highlight BadForm ctermbg=darkred guibg=darkred

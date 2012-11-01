@@ -327,7 +327,7 @@ elseif g:lucius_style == "light"
     hi Question     guifg=fg        guibg=NONE      ctermfg=fg     ctermbg=NONE      gui=none      cterm=none
     hi WarningMsg   guifg=#af5700   guibg=NONE      ctermfg=130    ctermbg=NONE      gui=none      cterm=none
     hi WildMenu     guifg=fg        guibg=#afd7ff   ctermfg=fg     ctermbg=153       gui=none      cterm=none
-    hi ColorColumn  guifg=NONE      guibg=#d7d7af   ctermfg=NONE   ctermbg=187       gui=none      cterm=none
+    hi ColorColumn  guifg=NONE      guibg=#d4d4d4   ctermfg=NONE   ctermbg=253       gui=none      cterm=none
     hi Ignore       guifg=bg                        ctermfg=bg
 
 
