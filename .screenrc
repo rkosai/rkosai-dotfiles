@@ -1,5 +1,8 @@
 term xterm
 
+# use normal bash environment
+shell -$SHELL
+
 # 256 colors
 
 # http://frexx.de/xterm-256-notes/

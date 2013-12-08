@@ -3,3 +3,7 @@ alias shortprompt="PS1='\$(perl ~/.custom/prompt.pl --short --user=\\u --host=\\
 shortprompt
 
 alias rw='head -n $[$RANDOM % $(cat /usr/share/dict/words | wc -l)] /usr/share/dict/words | tail -n 1'
+
+# Set bash into vi mode (sadly, not vim)
+EDITOR=vim
+set -o vi
