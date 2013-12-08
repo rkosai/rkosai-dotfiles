@@ -1,8 +1,1 @@
-*
-!.gitignore
-!.vimrc
-!.screenrc
-!.vim/
-!.custom/
-!.bash_aliases
-
+.git
