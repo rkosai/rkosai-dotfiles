@@ -15,3 +15,6 @@ defbce "on"
 hardstatus alwayslastline
 hardstatus string '%{= kW}%-Lw%{= kY}%50> %n*%f %t%{= kW}%+Lw%< %{= kW}%-=%D %m/%d/%y %C %A %1`%{-}'
 
+# disable the visual bell
+vbell off
+
