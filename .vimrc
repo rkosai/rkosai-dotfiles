@@ -32,4 +32,5 @@ autocmd BufNewFile,BufRead *.as set filetype=actionscript
 " When you leave vim, fix the terminal background to not be grey anymore
 autocmd VimLeave * :highlight Normal ctermfg=black ctermbg=white
 
-
+" Stop the dinging
+set belloff=all
